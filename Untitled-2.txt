@@ -1,0 +1,4 @@
+$queryemp = "SHOW TABLE STATUS LIKE 'ats_employee'";
+$resultemp = mysqli_query($connection,$queryemp);
+$rowemp = mysqli_fetch_assoc($resultemp);
+    $emp_id_ag = $rowemp['Auto_increment'];
